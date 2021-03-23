@@ -1,0 +1,78 @@
+integer
+>>> 10
+10
+>>> 0b10 # binary
+2
+>>> 0o10 # octal
+8
+>>> 0x10 # hex
+16
+>>> int(3.5) # rounds towards zero
+3
+>>> int(3.5)
+3
+>>> int (-3.5)
+-3
+>>> int(3.9)
+3
+>>> int("496") # string
+496
+>>> int("10000", 3) # base 3
+81
+
+
+float
+>>> 3.125
+3.125
+>>> 1.616e-35
+1.616e-35
+>>> 3e8  # 3 to the eigth power
+300000000.0
+>>> float(7)
+7.0
+>>> float("1.618")
+1.618
+>>> float("nan") # not a number
+nan
+>>> float("inf") # infinity
+inf
+>>> float("-inf") # - infinity
+-inf
+
+None
+>>> None
+>>> a = None
+>>> a is None
+True
+
+bool
+>>> True
+True
+>>> False
+False
+>>> bool(0) # zero is falsey
+False
+
+>>> bool(1) # non zero is true
+True
+>>> bool(-1)
+True
+
+>>> bool(0.0) # zero is falsey for floats too
+False
+
+>>> bool([]) # empty set is false
+False
+
+>>> bool([1, 5, 5]) # non empty is true
+True
+
+>>> bool("") # empty string is false
+False
+
+>>> bool("Spam") # non empty string is true
+True
+>>> bool("False")
+True
+
+
