@@ -50,15 +50,15 @@ bool
 True
 >>> False
 False
->>> bool(0) # zero is falsey
+>>> bool(0) # zero is falsy
 False
 
->>> bool(1) # non zero is true
+>>> bool(1) # non zero is truthy
 True
 >>> bool(-1)
 True
 
->>> bool(0.0) # zero is falsey for floats too
+>>> bool(0.0) # zero is falsy for floats too
 False
 
 >>> bool([]) # empty set is false
