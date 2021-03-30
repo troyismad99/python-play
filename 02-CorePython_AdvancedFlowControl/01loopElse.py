@@ -1,5 +1,38 @@
 # the while ... else
 
+'''
+while condition: 
+    execute_condition_is_true()
+else: 
+    execute_condition_is_false()
+
+Similar to:
+
+while condition: 
+    execute_condition_is_true()
+execute_condition_is_false()
+
+however:
+while condition:
+    flag = execute_condition_is_true()
+    if flag: 
+        break
+execute_condition_is_false() # always executes even when not false
+
+so:
+
+while condition:
+    flag = execute_condition_is_true() 
+    if flag:
+        break 
+else: # nobreak
+    execute_condition_is_false()
+
+Now, the else block only executes when the main loop condition evaluates to False. 
+If we jump out of the loop another way, such as with the break statement, execution jumps over the else clause. 
+
+'''
+
 def is_comment(item): 
     return isinstance(item, str) and item.startswith('#')
 
@@ -8,14 +41,16 @@ def execute(program):
     """
     Execute a stack program. 
     
-    Args: program: Any stack-like collection where each item in the stack is a callable operator or non-callable operand. 
-          The top-most items on the stack may be strings beginning with '#' for the purposes of documentation. 
-          Stack-like means support for: item = stack.pop() stack.append(item) if stack:
-
- Remove and return the top item 
- Push an item to the top # False in a boolean context when empty
-
-""" 
+    Args: 
+        program: Any stack-like collection where each item in the stack 
+            is a callable operator or non-callable operand. The top-most 
+            items on the stack may be strings beginning with '#' for 
+            the purposes of documentation. Stack-like means support for: 
+            
+                item = stack.pop()  # Remove and return the top item 
+                stack.append(item)  # Push an item to the top 
+                if stack:           # False in a boolean context when empty
+    """ 
     # Find the start of the 'program' by skipping 
     # any item which is a comment. 
     while program: 
