@@ -35,14 +35,12 @@ class Solution:
         digitprod = 1
 
         while n:
-
             # discovered divmod that does both the % and //
             n, digit = divmod(n, 10)
             digitsum  += digit
             digitprod *= digit
         
         return digitprod - digitsum
-
 
 # examples
 s = Solution()
