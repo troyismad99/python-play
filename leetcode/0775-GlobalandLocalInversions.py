@@ -35,7 +35,7 @@ class Solution:
         # every local is also a global so we only need to check
         # for global that is not a local
         # locals are always beside each other so once we find a global that 
-        # is not with neighbouring elements we are False
+        # is not with neighboring elements we are False
 
         currentMax = A[0]
 
