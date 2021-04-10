@@ -40,8 +40,8 @@ class Solution:
         # The inverse of XOR is XOR:
         #       If we have C = A^B
         #       We can get A or B back if we have the other value:
-        #       A = C^B ( or the cumutative B^C )
-        #       B = C^A ( or the cumutative A^C )
+        #       A = C^B ( or the commutative B^C )
+        #       B = C^A ( or the commutative A^C )
 
         # start with the free one!
         result = [first]
