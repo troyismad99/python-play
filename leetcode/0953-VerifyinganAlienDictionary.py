@@ -7,7 +7,7 @@ permutation of lowercase letters.
 
 Given a sequence of words written in the alien language, and the order 
 of the alphabet, return true if and only if the given words are sorted 
-lexicographicaly in this alien language.
+lexicographically in this alien language.
 
 Example 1:
     Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
