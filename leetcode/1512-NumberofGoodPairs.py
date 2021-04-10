@@ -34,12 +34,12 @@ class Solution:
 
         result = 0
 
-        # a dictionary of number occurances
+        # a dictionary of number occurrences
         numDictionary = {}
 
         for n in nums:
             if n in numDictionary:
-                result += numDictionary[n] # we match with every previous occurence
+                result += numDictionary[n] # we match with every previous occurrence
                 numDictionary[n] += 1
             else:
                 # set the count up for next time we encounter n
