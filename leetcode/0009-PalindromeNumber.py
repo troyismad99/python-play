@@ -35,7 +35,7 @@ Follow up: Could you solve it without converting the integer to a string?
 class Solution:
     def isPalindrome(self, x: int) -> bool:
 
-        # negatives cannot be palidromes
+        # negatives cannot be palindromes
         if x < 0:
             return False
 
