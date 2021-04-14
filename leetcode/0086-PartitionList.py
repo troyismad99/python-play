@@ -37,7 +37,7 @@ class Solution:
         small_start = ListNode(0)
         big_start = ListNode(0)
 
-        # two points
+        # two pointers
         sp = small_start
         lp = big_start
 
