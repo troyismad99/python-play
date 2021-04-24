@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# just keep the template
+# .vscode
+# !.vscode/settings.json.default
