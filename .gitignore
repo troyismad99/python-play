@@ -131,4 +131,3 @@ dmypy.json
 # just keep the template
 .vscode
 !.vscode/settings.json.default
-.vscode/settings.json
