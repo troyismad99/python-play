@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # just keep the template
-# .vscode
-# !.vscode/settings.json.default
+.vscode
+!.vscode/settings.json.default
