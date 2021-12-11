@@ -24,7 +24,7 @@ Norway
 print( t + (338, 265e9))
 # ('Norway', 4.953, 3, 338, 265000000000.0)
 
-# repitition with * operator
+# repetition with * operator
 print( t * 3)
 # ('Norway', 4.953, 3, 'Norway', 4.953, 3, 'Norway', 4.953, 3)
 
