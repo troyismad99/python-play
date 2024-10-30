@@ -38,13 +38,9 @@ Constraints:
 class Solution:
     def kidsWithCandies(self, candies: list[int], extraCandies: int) -> list[bool]:
         
-        result = []
         maxCandyCount = max(candies)
 
-        for i in candies:
-            result.append( (i + extraCandies) >= maxCandyCount )
-
-        return result
+        return [(i + extraCandies) >= maxCandyCount for i in candies]
 
 s = Solution()
 
