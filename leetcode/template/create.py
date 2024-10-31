@@ -4,7 +4,7 @@ def main():
 
     template = "./leetcode/template/leet_template.py"
     contents = pathlib.Path(template).read_text()
-    newfile = "./leetcode/xxxx-xxxx.py"
+    newfile = "./leetcode/0000-xxxx.py"
 
     with open(newfile, "a") as nf:
         nf.write(contents)
