@@ -45,20 +45,18 @@ class Solution:
         return sum(row == col for row, col in product(grid, grid2))
 
 
-    def equalPairs_a(self, grid: List[List[int]]) -> int:
+    def equalPairs_working(self, grid: List[List[int]]) -> int:
 
         grid2 = []
 
         for i in range(len(grid[0])):
-            col = []
+            # col = []
 
-            for ii in range(len(grid)):
-                col.append(grid[ii][i])
-
+            # for ii in range(len(grid)):
+            #     col.append(grid[ii][i])
             
+            col = [item[i] for item in grid]
             grid2.append(col)
-
-        # grid2 = [list(col) for col in zip(*grid)]
 
         a = 0
 
