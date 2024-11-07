@@ -2,7 +2,7 @@
 
 """
 
-# Runtime:         xx ms       our runtime beats xxxxx % of python3 submissions.
+# Runtime:         xx ms      your runtime beats xxxxx % of python3 submissions.
 # Memory Usage: xxxxx MB Your memory usage beats xxxxx % of python3 submissions.
 
 from itertools import product, permutations, combinations, zip_longest
