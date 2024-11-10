@@ -24,16 +24,6 @@ import unittest
 
 class TestSolution(unittest.TestCase):
 
-    def compare_lists(self, list1, list2):
-
-        if len(list1) != len(list2):
-            return False
-
-        if list1 == list2:
-            return True
-
-        return sorted(map(sorted, list1)) == sorted(map(sorted, list2))
-
     def setUp(self):
         self.s = Solution()
 
